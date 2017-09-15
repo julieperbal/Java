@@ -1,0 +1,7 @@
+package com.upto.application;
+
+public class LoginController {
+	
+	@FXML
+	private BorderPane page;
+}

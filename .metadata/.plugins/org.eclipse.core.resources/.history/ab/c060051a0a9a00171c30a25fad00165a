@@ -1,0 +1,5 @@
+package com.upto.application;
+
+public class LoginController {
+	
+}
