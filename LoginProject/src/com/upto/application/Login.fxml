@@ -8,10 +8,9 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-
-<BorderPane fx:id="page" styleClass="fx" stylesheets="@application.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="com.upto.application.LoginController">
+<BorderPane fx:id="page" styleClass="fx" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upto.application.LoginController">
    <top>
-      <Label text="Connection" textFill="#f2eeee" BorderPane.alignment="CENTER" />
+      <Label fx:id="errorMessage" text="Connection" textFill="#f2eeee" BorderPane.alignment="CENTER" />
    </top>
    <padding>
       <Insets bottom="100.0" left="100.0" right="100.0" top="100.0" />
@@ -19,8 +18,8 @@
    <center>
       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
          <children>
-            <TextField promptText="Name" />
-            <TextField promptText="Password" />
+            <TextField fx:id="txtLogin" promptText="Name" />
+            <TextField fx:id="txtPwd" promptText="Password" />
          </children>
       </VBox>
    </center>
@@ -28,7 +27,7 @@
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
             <Button fx:id="btncancel" mnemonicParsing="false" text="Cancel" />
-            <Button fx:id="btnsubmit" mnemonicParsing="false" text="Submit" />
+            <Button fx:id="btnSubmit" mnemonicParsing="false" text="Submit" />
          </children>
       </HBox>
    </bottom>
