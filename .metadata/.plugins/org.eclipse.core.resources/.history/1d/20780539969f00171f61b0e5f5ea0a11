@@ -1,0 +1,11 @@
+package Note;
+
+import java.util.Scanner;
+
+public class NoteController {
+	
+	Scanner sc = new Scanner(System.in);
+	int a = sc.nextInt();
+	sysou
+	  
+}

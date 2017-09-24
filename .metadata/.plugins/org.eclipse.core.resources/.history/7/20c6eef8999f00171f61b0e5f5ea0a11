@@ -1,0 +1,21 @@
+package progRemi;
+
+//Ceci importe la classe Scanner du package java.util
+import java.util.Scanner;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+//	int a = sc.nextInt();
+//	Algo qui permet d'afficher quelque chose dans la console:
+	System.out.println("Veuillez saisir une note: ");
+//	On créé la variable qui va récupérer la saisie utilisateur
+	String str = sc.nextLine();
+//	On affiche une string avec la saisie utilisateur
+	System.out.println("Vous avez saisi: " + str);
+	}
+
+}
